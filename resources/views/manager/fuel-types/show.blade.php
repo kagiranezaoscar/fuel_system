@@ -1,0 +1,2 @@
+<x-app-layout><x-slot name="header"><h2 class="text-xl font-semibold">{{ $fuelType->fuel_name }}</h2></x-slot><div class="mx-auto max-w-4xl px-4 py-8"><div class="rounded-lg border bg-white p-6 dark:border-gray-700 dark:bg-gray-800"><p>Price: RWF {{ number_format($fuelType->price_per_liter, 2) }}</p><p>Available: {{ $fuelType->available_quantity }} L</p><p class="mt-3 text-gray-600">{{ $fuelType->description }}</p></div></div></x-app-layout>
+
