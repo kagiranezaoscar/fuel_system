@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}" class="flex items-center gap-2 font-bold text-slate-950">
-                        <span class="rounded-md bg-slate-950 px-2.5 py-1.5 text-white shadow-sm"><span class="text-white">OSC</span> <span class="text-orange-400">ENERGY</span></span>
+                        <span class="rounded-md bg-slate-950 px-2.5 py-1.5 text-white shadow-sm"><span class="text-white">Fuel Station</span> <span class="text-orange-400">Management</span></span>
                     </a>
                 </div>
 

@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $admin = User::updateOrCreate(
-            ['email' => 'admin@fuel.test'],
+        User::updateOrCreate(
+            ['email' => 'admin@gmail.com'],
             [
                 'name' => 'System Administrator',
                 'username' => 'admin',
@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
                 'phone' => '+250780000001',
                 'address' => 'Gasabo District Fuel Station',
                 'email_verified_at' => now(),
-                'password' => Hash::make('password'),
+                'password' => Hash::make('12345'),
             ],
         );
 
@@ -73,7 +73,7 @@ class DatabaseSeeder extends Seeder
             return $model;
         });
 
-        if ($admin && \App\Models\FuelSale::count() === 0) {
+        if (\App\Models\FuelSale::count() === 0) {
             $service = app(FuelSaleService::class);
             $paymentMethods = ['cash', 'card', 'mobile_money', 'bank_transfer'];
 
